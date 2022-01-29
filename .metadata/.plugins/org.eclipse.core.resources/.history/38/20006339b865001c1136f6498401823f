@@ -1,0 +1,19 @@
+package testen;
+import domein.Bar;
+//import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+
+public class BarTest {
+	@Test
+	public void magAlcoholDrinken_oudGenoeg_retourneertTrue() {
+		Bar bar = new Bar();
+		int leeftijd = 22;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		assertTrue(resultaat);
+		
+	}
+	
+	
+}

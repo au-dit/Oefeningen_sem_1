@@ -1,0 +1,20 @@
+package domein;
+
+public class Driehoek {
+	
+	//declaring variables
+	int a,b,c;
+	
+	private void setA(int a) {
+		
+	}
+	
+	private void setB(int b) {
+		
+	}
+	
+	private void setC(int c) {
+		
+	}
+	
+}

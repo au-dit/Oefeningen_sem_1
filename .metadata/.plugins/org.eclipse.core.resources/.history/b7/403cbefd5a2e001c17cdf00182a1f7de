@@ -1,0 +1,16 @@
+package H2_oefeningen;
+
+public class H2_Oef7_C {
+
+	public static void main(String[] args) {
+
+		for(i = 61; i <= 122 ; i++) {
+			
+			
+			char alf = i;
+			System.out.println(alf);
+		}
+
+	}
+
+}

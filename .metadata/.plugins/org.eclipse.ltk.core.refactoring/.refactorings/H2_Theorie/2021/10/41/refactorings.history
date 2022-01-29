@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;H2_Theorie.Switch_&apos; to &apos;Switch_Statements&apos;&#x0D;&#x0A;- Original project: &apos;H2_Theorie&apos;&#x0D;&#x0A;- Original element: &apos;H2_Theorie.Switch_&apos;&#x0D;&#x0A;- Renamed element: &apos;H2_Theorie.Switch_Statements&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Switch_&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;H2_Theorie{Switch_.java[Switch_" matchStrategy="1" name="Switch_Statements" qualified="false" references="true" similarDeclarations="false" stamp="1634053737619" textual="false" version="1.0"/>
+</session>

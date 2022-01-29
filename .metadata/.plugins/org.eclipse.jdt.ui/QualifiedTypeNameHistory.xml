@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="domein.KauwgomAutomaat"/>
+    <fullyQualifiedTypeName name="domein.Rechthoek"/>
+    <fullyQualifiedTypeName name="domein.Driehoek"/>
+    <fullyQualifiedTypeName name="domein.Product"/>
+    <fullyQualifiedTypeName name="domein.Rekenmachine"/>
+    <fullyQualifiedTypeName name="domein.DeckOfCards"/>
+    <fullyQualifiedTypeName name="domein.Card"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="domein.Rekening"/>
+    <fullyQualifiedTypeName name="domein.Marktkraam"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="domein.Bar"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.ValueSource"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
+</qualifiedTypeNameHistroy>

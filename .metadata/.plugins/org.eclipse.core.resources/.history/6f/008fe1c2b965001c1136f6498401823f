@@ -1,0 +1,46 @@
+package testen;
+
+import domein.Bar;
+import org.junit.jupiter.api.*;
+
+
+
+public class BarTest {
+	
+	@BeforeEach
+	public void SetUp() {
+		Bar bar = new Bar();
+	}
+	
+	@Test
+	public void magAlcoholDrinken_oudGenoeg_retourneertTrue() {
+		Bar bar = new Bar();
+		int leeftijd = 22;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertTrue(resultaat);
+		
+	}
+	@Test
+	public void magAlcoholDrinken_nietOudGenoeg_retourneertFalse() {
+		Bar bar = new Bar();
+		int leeftijd = 11;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertFalse(resultaat);
+	}
+	@Test
+	public void magAlcoholDrinken_grensgevalIs16_retourneertTrue() {
+		Bar bar = new Bar();
+		int leeftijd = 16;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertTrue(resultaat);
+	}
+	@Test
+	public void magAlcoholDrinken_grensgevalIs15_retourneertFalse() {
+		Bar bar = new Bar();
+		int leeftijd = 15;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertFalse(resultaat);
+	}
+	
+	
+}

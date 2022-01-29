@@ -1,0 +1,54 @@
+package testen;
+
+import domein.Bar;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.NullSource;
+import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.*;
+
+
+public class BarTestParametrised {
+	
+	private Bar bar;
+	private int leeftijd;
+	
+	@BeforeEach
+	public void SetUp() {
+		bar = new Bar();
+	};
+	
+	@ParameterizedTest
+	@NullSource
+	@ValueSource(ints = {-1,11,15})
+	public void magAlcoholDrinken_teJong_retourneerdFalse(int leeftijd) {
+		Assertions.assertTrue(bar.magAlcoholDrinken(leeftijd));
+	}
+	
+	@Test
+	public void magAlcoholDrinken_oudGenoeg_retourneertTrue() {
+		leeftijd = 22;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertTrue(resultaat);
+		
+	}
+	@Test
+	public void magAlcoholDrinken_nietOudGenoeg_retourneertFalse() {
+		leeftijd = 11;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertFalse(resultaat);
+	}
+	@Test
+	public void magAlcoholDrinken_grensgevalIs16_retourneertTrue() {
+		leeftijd = 16;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertTrue(resultaat);
+	}
+	@Test
+	public void magAlcoholDrinken_grensgevalIs15_retourneertFalse() {
+		leeftijd = 15;
+		boolean resultaat = bar.magAlcoholDrinken(leeftijd);
+		Assertions.assertFalse(resultaat);
+	}

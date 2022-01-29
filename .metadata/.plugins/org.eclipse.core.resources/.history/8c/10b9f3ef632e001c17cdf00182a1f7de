@@ -1,0 +1,35 @@
+package H2_oefeningen;
+import java.util.Scanner;
+
+public class H2_Oef9_B {
+
+	public static void main(String[] args) {
+		
+		Scanner userInput = new Scanner(System.in);
+		int input, kleinste = 0, grootste = 0, i = 0;
+		String foutMelding = "Er werden geen geldige getallen ingevoerd";
+		String melding = "Het grootste ingegeven getal is: %d\tHet kleinste is: %d";
+		
+		
+		do {
+			System.out.printf("Geef een getal (0 om te stoppen): ");
+			input =  userInput.nextInt();
+			
+			if(i==0)
+				kleinste = grootste = input;
+				i ++;
+			
+			if (input > grootste)
+				grootste = input;
+			
+			if (input < kleinste)
+				kleinste = input;
+			
+				
+			
+		}while (input != 0);
+			
+		
+	}
+
+}

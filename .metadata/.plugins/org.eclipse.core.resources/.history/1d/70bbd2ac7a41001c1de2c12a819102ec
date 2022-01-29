@@ -1,0 +1,28 @@
+package cui;
+import java.util.Scanner;
+
+
+public class ArrayFilterenOpGroteGetallen {
+
+	public static void main(String[] args) {
+		//vraag gebruiker voor 10 gehelen getallen (opslaan in een array) en een extra getal
+		//print de getallen met index die groter zijn dan extra getal
+		
+		//variabele
+		final int aantalGetallen = 10;
+		Scanner input = new Scanner(System.in);
+		int waardes[] = new int[aantalGetallen];
+		
+		
+		//krijg de waardes en sla op in array
+		for(int i = 0; i<10; i++) {
+			System.out.printf("Geef getal %d: ", i+=1);
+			waardes[i] = input.nextInt();
+			
+		}
+		
+		
+
+	}
+
+}
